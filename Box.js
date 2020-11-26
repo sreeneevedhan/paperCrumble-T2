@@ -13,7 +13,7 @@ class Box {
       var pos =this.body.position;
       rectMode(CENTER);
       rect(pos.x, pos.y, this.width, this.height);
-    imageMode(CENTER);
-    image(this.image,1000,330,200,200);
+    //imageMode(CENTER);
+    //image(this.image,1000,330,200,200);
     }
   };

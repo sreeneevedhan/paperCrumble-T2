@@ -14,9 +14,10 @@ class Ball {
     }
     display(){
       var pos =this.paperObject.position;
-      
-      imageMode(CENTER);
-      image(this.image,pos.x, pos.y,this.radius,this.radius);
+      ellipseMode(CENTER);
+      ellipse(pos.x,pos.y,this.radius,this.radius);
+     // imageMode(CENTER);
+      //image(this.image,pos.x, pos.y,this.radius,this.radius);
      
          }
   };
