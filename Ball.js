@@ -4,7 +4,7 @@ class Ball {
           isStactic:false,
           'restitution':0.3,
           'friction':0.5,
-          'density':1.2
+          'density':1
       }
       this.paperObject = Bodies.circle(x, y, radius, options);
       this.radius =radius;
@@ -15,6 +15,7 @@ class Ball {
     display(){
       var pos =this.paperObject.position;
       
+      imageMode(CENTER);
       image(this.image,pos.x, pos.y,this.radius,this.radius);
      
          }

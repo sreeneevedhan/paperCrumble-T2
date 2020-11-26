@@ -23,7 +23,7 @@ function setup() {
 	box1 = new Box(1000,430,200,20);
 	box2 = new Box(900,340,20,200);
 	box3 = new Box(1100,340,20,200);
-	paperObject = new Ball(100,100,70);
+	paperObject = new Ball(100,100,50);
 
 	var groundOptions ={
         isStatic: true
@@ -44,13 +44,11 @@ function draw() {
   
  
 
-  keyPressed();
-  drawSprites();
 box1.display();
 box2.display();
 box3.display();
 paperObject.display();
-console.paperObjectY
+
 }
 
 
@@ -58,7 +56,7 @@ function keyPressed() {
 	
 	if (keyCode === UP_ARROW) {
 	
-		Matter.Body.applyForce(paperObject.paperObject,paperObject.paperObject.position,{x:75,y:-85} );
+		Matter.Body.applyForce(paperObject.paperObject,paperObject.paperObject.position,{x:440,y:-440} );
 		
 	    
 		} 
